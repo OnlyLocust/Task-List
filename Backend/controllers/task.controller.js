@@ -51,7 +51,6 @@ const updateCom = async (req , res) => {
         const updateCom = await task.findByIdAndUpdate(taskId , {$set : {completed : bol}} , {new:true})
         return res.status(200).json(updateCom)
     } catch (error) {
-        console.log('hi');
         
         return res.status(400).json(error)
     }

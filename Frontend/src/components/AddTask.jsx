@@ -34,7 +34,7 @@ const AddTask = ({taskData}) => {
   }
 
   return (
-    <div className="bg-gray-700 h-screen w-screen text-white flex text-[10px] opacity-90 absolute flex justify-center items-center ">
+    <div className="bg-gray-700 h-screen w-screen text-white text-[10px] opacity-90 absolute flex justify-center items-center ">
       <div className="border border-white p-2 rounded-2xl w-[70vw]  sm:w-[40vw]">
         <div className="flex justify-end m-1" >
           <GiCancel onClick={() => dispatch(changeToAdd({ isToAdd: false, task:'', desc:'' }))} className="cursor-pointer"/>
